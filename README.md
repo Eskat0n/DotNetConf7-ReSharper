@@ -1,0 +1,2 @@
+DotNetConf7-ReSharper
+=====================

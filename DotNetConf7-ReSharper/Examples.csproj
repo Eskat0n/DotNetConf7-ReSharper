@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D876C19-1852-4BE2-A780-33F839107919}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNetConf.Seventh.ReSharper.Examples</RootNamespace>
+    <AssemblyName>DotNetConf.Seventh.ReSharper.Examples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="ByndyuSoft.Infrastructure.Common">
+      <HintPath>..\packages\Infrastructure.Common.1.0.13.0\lib\net40\ByndyuSoft.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ByndyuSoft.Infrastructure.Domain">
+      <HintPath>..\packages\Infrastructure.Domain.1.1.0\lib\net40\ByndyuSoft.Infrastructure.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.7.0\lib\net45\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="NArms.AutoMapper">
+      <HintPath>..\packages\NArms.AutoMapper.1.1.1.0\lib\net40\NArms.AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="NArms.Core">
+      <HintPath>..\packages\NArms.Core.0.1.1.0\lib\net40\NArms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Annotated\ISomeConfiguration.cs" />
+    <Compile Include="Annotated\SomeConfiguration.cs" />
+    <Compile Include="Annotated\SomeDto.cs" />
+    <Compile Include="CodeGeneration\MyDto.cs" />
+    <Compile Include="ExtractingFieldConst.cs" />
+    <Compile Include="ExtractingFieldInitializer.cs" />
+    <Compile Include="ExtractingMethod.cs" />
+    <Compile Include="ExtractingVar.cs" />
+    <Compile Include="Inlining.cs" />
+    <Compile Include="Navigation\Class\AndSoAreYou.cs" />
+    <Compile Include="Navigation\Class\RosesAreRed.cs" />
+    <Compile Include="Navigation\Class\SugarIsSweet.cs" />
+    <Compile Include="Navigation\Class\VioletsAreBlue.cs" />
+    <Compile Include="Navigation\Member\MemberNavigation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSR.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Navigation\File\License.txt" />
+    <Content Include="Navigation\File\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

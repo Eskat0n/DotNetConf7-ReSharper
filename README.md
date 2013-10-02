@@ -1,2 +1,1 @@
-DotNetConf7-ReSharper
-=====================
+Код, используемый для демонстрации возможностей по использованию ReSharper, в рамках доклада ["ReSharper 8.0 или магия продуктивной разработки"](http://dotnetconf.ru/Materialy/ReSharper) на конференции [DotNetConf 7](http://dotnetconf.ru/)
